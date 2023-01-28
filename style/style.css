@@ -1,0 +1,59 @@
+body header {
+  width: 100%;
+}
+body header ul img {
+  margin-left: 8rem;
+  margin-top: 0.5rem;
+  width: 25rem;
+  height: 2rem;
+}
+body header ul a {
+  text-decoration: none;
+  margin-left: 35rem;
+}
+body .container {
+  width: 100%;
+  display: flex;
+  background-color: rgba(236, 226, 226, 0.748);
+}
+body .container .right {
+  width: 50%;
+}
+body .container .right img {
+  width: 25rem;
+}
+body .container .right .blue {
+  width: 20rem;
+  height: 10rem;
+  background-color: blue;
+}
+body .container .right .orange {
+  width: 20rem;
+  height: 10rem;
+  background-color: orange;
+}
+body .container .left {
+  width: 50%;
+  background-color: wheat;
+}
+body .container .left h1, body .container .left p {
+  color: rgb(89, 89, 171);
+  font-size: 3rem;
+  font-family: serif;
+}
+body .container .left p {
+  font-size: 1rem;
+}
+body .container .left button {
+  border-radius: 3rem;
+  background-color: rgb(39, 71, 71);
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem 0.8rem 2rem;
+  font-size: 1rem;
+}
+body .container-1 h2 {
+  font-size: 4rem;
+  text-align: center;
+  color: rgb(51, 117, 117);
+}/*# sourceMappingURL=style.css.map */
