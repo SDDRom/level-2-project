@@ -48,19 +48,47 @@ body .container {
 }
 body .container .right {
   width: 50%;
+  display: flex;
+  margin-top: 100px;
 }
 body .container .right img {
   width: 20rem;
 }
+body .container .right .girl {
+  width: 50%;
+  animation: Romaric 5s linear;
+}
 body .container .right .blue {
-  width: 20rem;
+  width: 25%;
   height: 20rem;
   background-color: blue;
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  position: left;
+  display: none;
 }
 body .container .right .orange {
   width: 20rem;
   height: 20rem;
   background-color: orange;
+  display: none;
+}
+body .container .right .girl-cv {
+  display: none;
+}
+body .container .right .girl-cv img {
+  display: none;
+}
+@keyframes Romaric {
+  0% {
+    transform: translateX(350px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateY(-120px);
+  }
 }
 body .container .left {
   width: 50%;
@@ -140,28 +168,76 @@ body .container-1 button {
 }
 
 section {
-  background-color: rgba(0, 0, 0, 0.87);
+  background-color: rgba(255, 239, 239, 0.87);
   height: 100vh;
-  padding: 30px 0px 0px 30px;
+  padding: 190px 0px 0px 30px;
+}
+section div.round-border {
+  height: 50px;
+  width: 50px;
+  background-color: black;
+  border-radius: 50%;
+  margin-left: 48%;
+  margin-bottom: 40px;
+  position: relative;
+}
+section div.round-border i {
+  position: absolute;
+  color: white;
+  margin-left: 25%;
+  margin-top: 20%;
+  font-size: 30px;
 }
 section h1 {
   text-align: center;
   font-family: "Roboto", sans-serif;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 400;
   color: "Roboto", sans-serif;
-  color: white;
+  color: black;
 }
 section form {
-  width: 40%;
-  margin-left: 30%;
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 30px;
 }
 section form p {
   width: 100%;
+  margin-top: 30px;
 }
-section form p input {
+section form p input, section form p button.submit-button {
   outline: none;
   border: none;
-  width: 40%;
-  margin-left: 30%;
+  width: 50%;
+  margin-left: 25%;
+  padding: 15px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: "Roboto", sans-serif;
+}
+section form p button {
+  background-color: orange;
+}
+section div.forgot-password {
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+section div.forgot-password p.password-question {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: "Roboto", sans-serif;
+}
+section div.forgot-password p.account-link a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: "Roboto", sans-serif;
+  color: orange;
 }/*# sourceMappingURL=style.css.map */

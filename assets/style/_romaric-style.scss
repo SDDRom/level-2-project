@@ -28,18 +28,46 @@ body{
         background-color: rgba(236, 226, 226, 0.748);
         .right{
             width: 50%;
+            display: flex;
+            margin-top: 100px;
             img{
                 width: 20rem;
             }
+            .girl{
+                width: 50%;
+                animation: Romaric 5s linear;
+            }
             .blue{
-                width: 20rem;
+                width: 25%;
                 height: 20rem;
                 background-color: blue;
+                border-top-left-radius: 100px;
+                border-bottom-right-radius: 100px;
+                position: left;
+                display: none;
             }
             .orange{
                 width: 20rem;
                 height: 20rem;
                 background-color: orange;
+                display: none;
+            }
+            .girl-cv{
+                display: none;
+                img{
+                    display: none;
+                }
+            }
+            @keyframes Romaric{
+                0%{
+                    transform: translateX(350px);
+                }
+                50%{
+                    transform: translateX(0);
+                }
+                100%{
+                    transform: translateY(-120px);
+                }
             }
         }
         .left{
