@@ -1,3 +1,14 @@
+
+let signInName = document.querySelector('#text-field');
+let userName = document.querySelector('#userName');
+let signupButton = document.querySelector('button.signup-button');
+let formElement = document.querySelector('form');
+const emailField = document.querySelector('#Email');
+const signInBtn = document.querySelector('.submit-button');
+let signUpPasswordField  = document.querySelector('#password-signup');// Getting password field for signup as object
+let signInPasswordField  = document.querySelector('#password-signin');// getting password for sign in as object
+let signInuserNameField = document.querySelector('#text-field');
+
 export const reactiveFunctions = {
     checkPassword: function () {
         //this block of code function to show the password written down by the user
@@ -17,14 +28,14 @@ export const reactiveFunctions = {
         e.preventDefault();
         let obtainedUser = JSON.parse(localStorage.getItem('User'));
 
-        if (emailField.value == '' && signInPasswordField.value == '') {
+        if (signInName.value == '' && signInPasswordField.value == '') {
             alert(`Email and password required`);
-            emailField.focus();
+            userName.focus();
             return
         }
-        if (emailField.value == '') {
+        if (signInName.value == '') {
             alert(`Email required`);
-            emailField.focus();
+            signInName.focus();
             return
         }
         if (signInPasswordField.value == '') {
@@ -34,9 +45,9 @@ export const reactiveFunctions = {
         }
 
         for (const user of obtainedUser) {
-            if (user.Email == emailField.value && user.password == signInPasswordField.value) {
+            if (user.Name == signInName.value && user.password == signInPasswordField.value) {
                 alert(`${user.Name} logged in with success`);
-                window.location.replace('../pages/userProfile.html');
+                window.location.replace('../../index.html');
                 return
             } else {
                 alert(`password or email do not match`);
@@ -52,7 +63,7 @@ export const reactiveFunctions = {
         event.preventDefault();
         const createdAccount = {
             Name: userName.value,
-            Email: email.value,
+            Email: emailField.value,
             password: signUpPasswordField.value
         };
         let usersInLocalStorage = localStorage.getItem('User');
@@ -76,7 +87,7 @@ export const reactiveFunctions = {
             }
             return
         }
-        if (email.value == '') {
+        if (emailField.value == '') {
             alert('put in User email');
             return
         }
@@ -88,7 +99,7 @@ export const reactiveFunctions = {
 
         // this block of code checks if the user account exist in the system;
         for (const user of usersInLocalStorage) {
-            if (user.Email == email.value && user.Name == userName.value) {
+            if (user.Email == emailField.value && user.Name == userName.value) {
                 alert('ACCOUNT EXIST');
                 return
             }
@@ -100,7 +111,7 @@ export const reactiveFunctions = {
             }
         }
         for (const user of usersInLocalStorage) {
-            if (user.Email == email.value) {
+            if (user.Email == emailField.value) {
                 alert('EMAIL EXIST');
                 return
             }
