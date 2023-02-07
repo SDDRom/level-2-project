@@ -1,11 +1,3 @@
-@-webkit-keyframes partners-animation {
-  0% {
-    right: 0px;
-  }
-  100% {
-    left: 0px;
-  }
-}
 @keyframes partners-animation {
   0% {
     right: 0px;
@@ -30,6 +22,10 @@ ul {
 
 body header {
   width: 100%;
+  border-bottom: 2rem solid lightblue;
+  border-radius: 20px;
+  box-shadow: 2px 1px 2px;
+  margin-top: 5px;
 }
 body header ul img {
   margin-left: 8rem;
@@ -40,6 +36,10 @@ body header ul img {
 body header ul a {
   text-decoration: none;
   margin-left: 35rem;
+  font-size: 2.5rem;
+  background-color: rgba(255, 166, 0, 0.76);
+  border-radius: 20px;
+  color: white;
 }
 body .container {
   width: 100%;
@@ -50,69 +50,52 @@ body .container .right {
   width: 50%;
 }
 body .container .right img {
-  width: 25rem;
+  width: 20rem;
 }
 body .container .right .blue {
   width: 20rem;
-  height: 10rem;
+  height: 20rem;
   background-color: blue;
 }
 body .container .right .orange {
   width: 20rem;
-  height: 10rem;
+  height: 20rem;
   background-color: orange;
 }
 body .container .left {
   width: 50%;
-  background-color: wheat;
+  background-color: rgba(255, 166, 0, 0.582);
 }
 body .container .left h1, body .container .left p {
-  color: rgb(89, 89, 171);
   font-size: 3rem;
   font-family: serif;
 }
+body .container .left h1 {
+  font-size: 10rem;
+  color: rgb(89, 89, 171);
+}
 body .container .left p {
-  font-size: 1rem;
+  font-size: 3rem;
+  text-align: center;
+  color: rgba(24, 27, 168, 0.63);
+  margin-bottom: 5rem;
 }
 body .container .left button {
   border-radius: 3rem;
-  background-color: rgb(39, 71, 71);
+  background-color: rgb(90, 194, 194);
   color: white;
   border: none;
   padding: 0.8rem 2rem 0.8rem 2rem;
   font-size: 1rem;
+  margin-left: 20rem;
+  width: 15rem;
+  height: 5rem;
+  font-size: 1.5rem;
 }
 body .container-1 h2 {
   font-size: 4rem;
   text-align: center;
   color: rgb(51, 117, 117);
-}
-
-section {
-  background-color: rgba(0, 0, 0, 0.87);
-  height: 100vh;
-  padding: 30px 0px 0px 30px;
-}
-section h1 {
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-  font-size: 30px;
-  font-weight: 400;
-  color: "Roboto", sans-serif;
-  color: white;
-}
-section form {
-  width: 40%;
-  margin-left: 30%;
-}
-section form p {
-  width: 100%;
-}
-section form p input {
-  outline: none;
-  border: none;
-  width: 40%;
-  margin-left: 30%;
 }
 body .container-1 p {
   font-size: 2rem;
@@ -140,7 +123,7 @@ body .container-1 .main .main-right h6 {
 }
 body .container-1 .main .main-right p {
   font-size: 1.3rem;
-  margin-top: -4rem;
+  margin-top: 1rem;
 }
 body .container-1 button {
   text-align: center;
@@ -154,4 +137,31 @@ body .container-1 button {
   background-color: rgba(57, 170, 170, 0.842);
   margin-left: 42rem;
   margin-top: -2rem;
+}
+
+section {
+  background-color: rgba(0, 0, 0, 0.87);
+  height: 100vh;
+  padding: 30px 0px 0px 30px;
+}
+section h1 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: "Roboto", sans-serif;
+  color: white;
+}
+section form {
+  width: 40%;
+  margin-left: 30%;
+}
+section form p {
+  width: 100%;
+}
+section form p input {
+  outline: none;
+  border: none;
+  width: 40%;
+  margin-left: 30%;
 }/*# sourceMappingURL=style.css.map */
