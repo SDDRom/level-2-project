@@ -29,7 +29,7 @@ section{
         p{
             width: 100%;
             margin-top: 30px;
-            input,button.submit-button{
+            input,button.submit-button,button.signup-button{
                 outline: none;
                 border: none;
                 @include container(50%,25%);
