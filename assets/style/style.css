@@ -113,4 +113,44 @@ section form p input {
   border: none;
   width: 40%;
   margin-left: 30%;
+body .container-1 p {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+body .container-1 .main {
+  display: flex;
+  width: 90%;
+  margin-left: 5%;
+}
+body .container-1 .main .main-right {
+  width: 30%;
+  margin-left: 3%;
+}
+body .container-1 .main .main-right img {
+  margin-left: 8rem;
+}
+body .container-1 .main .main-right h6 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 100;
+  margin-top: 1rem;
+}
+body .container-1 .main .main-right p {
+  font-size: 1.3rem;
+  margin-top: -4rem;
+}
+body .container-1 button {
+  text-align: center;
+  width: 15rem;
+  height: 5rem;
+  font-size: 1.2rem;
+  font-weight: 100;
+  border: none;
+  border-radius: 2rem;
+  color: white;
+  background-color: rgba(57, 170, 170, 0.842);
+  margin-left: 42rem;
+  margin-top: -2rem;
 }/*# sourceMappingURL=style.css.map */

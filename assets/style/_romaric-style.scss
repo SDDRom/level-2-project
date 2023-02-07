@@ -63,5 +63,47 @@ body{
             text-align: center;
             color: rgb(51, 117, 117);
         }
+        p{
+            font-size: 2rem;
+            text-align: center;
+            margin-top: 3rem;
+            margin-bottom: 5rem;
+        }
+        .main{
+            display: flex;
+            width: 90%;
+            margin-left: 5%;
+
+            .main-right{
+                width: 30%;
+                margin-left: 3%;
+                img{
+                    margin-left: 8rem;
+                }
+                h6{
+                    text-align: center;
+                    font-size: 2.5rem;
+                    font-weight: 100;
+                    margin-top: 1rem;
+                }
+                p{
+                    font-size: 1.3rem;
+                    margin-top: -4rem;
+                }
+            }
+        }
+        button{
+            text-align: center;
+            width: 15rem;
+            height: 5rem;
+            font-size: 1.2rem;
+            font-weight: 100;
+            border: none;
+            border-radius: 2rem;
+            color: white;
+            background-color: rgba(57, 170, 170, 0.842);
+            margin-left: 42rem;
+            margin-top: -2rem;
+        }
     }
 }
