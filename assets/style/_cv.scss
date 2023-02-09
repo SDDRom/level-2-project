@@ -4,6 +4,11 @@ body{
     box-sizing: border-box;
     font-family: sans-serif;
 }
+textarea{
+    resize: none;
+    height: 100px;
+    @include text-style(16px,400,black);
+}
 .print-area{
     width: 80%;
     margin: 20px auto;

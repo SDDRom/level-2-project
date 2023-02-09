@@ -1,3 +1,11 @@
+@-webkit-keyframes partners-animation {
+  0% {
+    right: 0px;
+  }
+  100% {
+    left: 0px;
+  }
+}
 @keyframes partners-animation {
   0% {
     right: 0px;
@@ -56,7 +64,8 @@ body .container .right img {
 }
 body .container .right .girl {
   width: 50%;
-  animation: Romaric 5s linear infinite;
+  -webkit-animation: Romaric 5s linear infinite;
+          animation: Romaric 5s linear infinite;
 }
 body .container .right .blue {
   width: 25%;
@@ -75,10 +84,22 @@ body .container .right .orange {
 }
 body .container .right .girl-cv {
   display: block;
-  animation: SDD 5s linear infinite;
+  -webkit-animation: SDD 5s linear infinite;
+          animation: SDD 5s linear infinite;
 }
 body .container .right .girl-cv img {
   display: block;
+}
+@-webkit-keyframes Romaric {
+  0% {
+    transform: translateX(350px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateY(-120px);
+  }
 }
 @keyframes Romaric {
   0% {
@@ -89,6 +110,17 @@ body .container .right .girl-cv img {
   }
   100% {
     transform: translateY(-120px);
+  }
+}
+@-webkit-keyframes SDD {
+  0% {
+    transform: translateY(-200px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(220px);
   }
 }
 @keyframes SDD {
@@ -253,4 +285,195 @@ section div.forgot-password p.account-link a {
   font-weight: 400;
   color: "Roboto", sans-serif;
   color: orange;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+}
+
+.print-area {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.print-area .header {
+  width: 100%;
+  height: 150px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.header img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50px;
+  position: absolute;
+  top: 50px;
+  left: 70px;
+  border: 5px solid white;
+  box-shadow: 3px 3px 10px rgb(0, 0, 1);
+  cursor: pointer;
+  transition: 0.5s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-color: black;
+}
+
+.header img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+  box-shadow: 3px 3px 10px rgb(185, 185, 211);
+}
+
+.header-text {
+  color: white;
+  width: 60%;
+  margin-left: auto;
+}
+
+.header-text h1 {
+  font-size: 80px;
+  font-weight: normal;
+}
+
+.header-text p {
+  font-size: 20px;
+  color: lightgrey;
+  margin-top: -50px;
+}
+
+.content {
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+
+.left {
+  width: 30%;
+  background-color: rgb(236, 234, 234);
+  margin-top: -100px;
+}
+
+.left .contact {
+  margin-top: 110px;
+  padding: 0 100px;
+}
+
+.contact h4 {
+  font-size: 30px;
+  font-weight: normal;
+  margin: 2px 0;
+}
+
+.contact h5 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.contact p {
+  font-size: 17px;
+}
+
+.skills {
+  margin-top: 3px;
+}
+
+.skills h1 {
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.bars {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px 10px;
+  display: flex;
+}
+
+.bars .bar p {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.bars span {
+  display: block;
+  width: 100%;
+  height: 10px;
+  background-color: gray;
+  margin-top: 10px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.bars span::before {
+  position: absolute;
+  content: "";
+  width: 80%;
+  height: 80%;
+  background-color: black;
+  top: 50%;
+  left: 2px;
+  transform: translateY(-50%);
+  border-radius: 10px;
+}
+
+.follow {
+  margin-top: 30px;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.follow h4 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.follow p {
+  font-size: 15px;
+  color: rgb(44, 63, 80);
+}
+
+.right {
+  width: 70%;
+  padding: 50px;
+}
+
+.right h1 {
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.right h1 span {
+  margin-right: 30px;
+  font-size: 50px;
+  color: lightgray;
+}
+
+.right p {
+  padding-left: 70px;
+  text-align: justify;
+  word-break: break-all;
+  font-size: 17px;
+  color: grey;
+  margin-top: 10px;
+}
+
+.work .work-group {
+  position: relative;
 }/*# sourceMappingURL=style.css.map */

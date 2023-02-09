@@ -9,6 +9,9 @@ let signUpPasswordField  = document.querySelector('#password-signup');// Getting
 let signInPasswordField  = document.querySelector('#password-signin');// getting password for sign in as object
 let signInuserNameField = document.querySelector('#text-field');
 
+
+
+
 export const reactiveFunctions = {
     checkPassword: function () {
         //this block of code function to show the password written down by the user
