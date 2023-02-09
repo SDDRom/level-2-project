@@ -27,15 +27,15 @@ body{
         display: flex;
         background-color: rgba(236, 226, 226, 0.748);
         .right{
-            width: 50%;
-            display: flex;
+            width: 40%;
+            display: block;
             margin-top: 100px;
             img{
                 width: 20rem;
             }
             .girl{
                 width: 50%;
-                animation: Romaric 5s linear;
+                animation: Romaric 5s linear infinite;
             }
             .blue{
                 width: 25%;
@@ -53,9 +53,10 @@ body{
                 display: none;
             }
             .girl-cv{
-                display: none;
+                display: block;
+                animation: SDD 5s linear infinite;
                 img{
-                    display: none;
+                    display: block;
                 }
             }
             @keyframes Romaric{
@@ -69,10 +70,22 @@ body{
                     transform: translateY(-120px);
                 }
             }
+            @keyframes SDD{
+                0%{
+                    transform: translateY(-200px);
+                }
+                50%{
+                    transform: translateX(0);
+                }
+                100%{
+                    transform: translateX(220px);
+                }
+            }
         }
         .left{
-            width: 50%;
-            background-color: rgba(255, 166, 0, 0.582);
+            width: 60%;
+            z-index: 1;
+            background-color: rgba(255, 166, 0, 0.979);
             // margin-left: 30%;
             h1, p{
                 // text-align: center;
