@@ -29,10 +29,16 @@ const addSchool = document.querySelector('button.add-school');// his is a button
 const schoolDescription = document.querySelector('#certificate-obtained');
 const schoolAttended = document.querySelector('#school-attended');
 const academicYear = document.querySelector('.academic-year');
-const myName =  document.querySelector('h1#my-name');
+
+const myName =  document.querySelector('#myName');
+const myOccupation = document.querySelector('p#occupation');
+const  myPerson = document.querySelector('about-person');
+const  myWorked = document.querySelector('place-worked');
 
 if(createCv){
-	createCv.addEventListener('click', createACv.createCvObject);
+	createCv.addEventListener('click', (event)=>{
+		createACv.createCvObject(event,myName)
+	});
 	
 }
 

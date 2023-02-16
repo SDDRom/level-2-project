@@ -12,28 +12,22 @@ const schoolAttended = document.querySelector('#school-attended');
 const academicYear = document.querySelector('.academic-year');
 
 
-const myName =  document.querySelector('h1#my-name');
-
 export const createACv = {
-    createCvObject : function (e){
+    createCvObject: function (e, element) {
         e.preventDefault();
         const myCv = {
-            Name : cvName.value,
-            Occupation : cvOccupation.value,
-            placesWorked : placeWorked.value,
-            workYears : dateWorked.value,
-            jobDescription : workDescription.value,
-            school : schoolAttended.value,
-            schoolDescript : schoolDescription.value,
-            schoolYear : academicYear.value
+            Name: cvName.value,
+            Occupation: cvOccupation.value,
+            placesWorked: placeWorked.value,
+            workYears: dateWorked.value,
+            jobDescription: workDescription.value,
+            school: schoolAttended.value,
+            schoolDescript: schoolDescription.value,
+            schoolYear: academicYear.value
         };
 
-        const storedCv =localStorage.setItem('Curriculum Vitae',JSON.stringify(myCv));
-
-        const cvInLocalStorage = JSON.parse(localStorage.getItem('Curriculum Vitae'));
-        myName.textContent = cvInLocalStorage.Name;
-
-	window.location.href = '../../pages/curriculum-vitae.html';
-       console.log(cvInLocalStorage);
+        localStorage.setItem('Curriculum Vitae', JSON.stringify(myCv));
+        window.location.href = '../../pages/curriculum-vitae.html';
+        console.log(cvInLocalStorage);
     }
 };
